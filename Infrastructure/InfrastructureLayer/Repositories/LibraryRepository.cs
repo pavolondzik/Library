@@ -48,7 +48,7 @@ namespace InfrastructureLayer.Repositories
 			await foreach (var entity in _context.Borrowings
 				.Include(x => x.User)
 				.Include(x => x.Book)
-				.Where(x => x.DateShouldReturn.Date == DateTime.Now.Date.AddDays(-1))
+				.Where(x => x.DateShouldReturn.Date.AddDays(-1) == DateTime.Now.Date)
 				.AsAsyncEnumerable())
 			{
 				yield return entity;
