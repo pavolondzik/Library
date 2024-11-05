@@ -1,14 +1,11 @@
-using InfrastructureLayer.Data;
-using InfrastructureLayer.Repositories;
 using InfrastructureLayer.ResponseDto;
 using LibraryCore.Entities;
 using LibraryCore.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementApi.Controllers
 {
-   [ApiController]
+	[ApiController]
    [Route("api/[controller]")]
    public class BooksController : ControllerBase
    {

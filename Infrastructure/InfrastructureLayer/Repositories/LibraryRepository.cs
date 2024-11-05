@@ -93,11 +93,6 @@ namespace InfrastructureLayer.Repositories
 
 		public async Task<bool> UpdateBorrowingAsync(Borrowing borrowing)
 		{
-			//var a = _context.Borrowings
-			//.Include(x => x.Book)
-			//.Include(y => y.User)
-			//.Find(borrowing.Id);
-
 			var entity = await _context.Borrowings
 			.Include(x => x.Book)
 			.Include(y => y.User)

@@ -1,22 +1,9 @@
 ﻿using LibraryCore.Entities;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace UnitTests
 {
-	public class UserTests : IDisposable
+	public class UserTests
    {
-      #region Setup
-      public UserTests()
-      {
-
-      }
-
-      public void Dispose()
-      {
-
-      }
-		#endregion Setup
-
 		[Fact]
 		public void FullName_AllThreeNames()
       {

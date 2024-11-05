@@ -8,7 +8,7 @@ namespace InfrastructureLayer.Data
 		private static DateTime Today = DateTime.Now;
 		private static DateTime DatePublished = new DateTime(2009,1,1);
 
-		public static readonly User User1 = new("Pavol", "Ondzik") { Email = "po@test.abc" };
+		public static readonly User User1 = new("Steve", "Wozniak") { Email = "steve.wozniak@gmail.abc" };
 		public static readonly User User2 = new("Robert", "C.", "Martin") { Email = "robert.c.martin@test.abc" };
 		public static readonly User User3 = new("Martin", "Fowler") { Email = "martin.fowler@test.abc" };
 
